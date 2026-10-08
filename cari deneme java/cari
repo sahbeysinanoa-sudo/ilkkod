@@ -1,0 +1,106 @@
+public class cari {
+    private double paraGirisi;
+    private double paraCikisi;
+    private double karZararDurumu;
+
+    public cari(double paraGirisi, double paraCikisi) {
+        this.paraGirisi = paraGirisi;
+        this.paraCikisi = paraCikisi;
+        this.karZararDurumu = this.paraGirisi - this.paraCikisi;
+    }
+
+    // Getter ve Setter Metotları
+    public double getParaGirisi() {
+        return paraGirisi;
+    }
+
+    public void setParaGirisi(double paraGirisi) {
+        this.paraGirisi = paraGirisi;
+        this.karZararDurumu = this.paraGirisi - this.paraCikisi;
+    }
+
+    public double getParaCikisi() {
+        return paraCikisi;
+    }
+
+    public void setParaCikisi(double paraCikisi) {
+        this.paraCikisi = paraCikisi;
+        this.karZararDurumu = this.paraGirisi - this.paraCikisi;
+    }
+
+    public double getKarZararDurumu() {
+        return karZararDurumu;
+    }
+}
+public class musteriler {
+    private int musteriId;
+    private String ad;
+    private String vergiNo;
+    private String sifre;
+
+    public musteriler(int musteriId, String ad, String vergiNo, String sifre) {
+        this.musteriId = musteriId;
+        this.ad = ad;
+        this.vergiNo = vergiNo;
+        this.sifre = sifre;
+    }
+
+    // Getter ve Setter Metotları
+    public int getMusteriId() {
+        return musteriId;
+    }
+
+    public void setMusteriId(int musteriId) {
+        this.musteriId = musteriId;
+    }
+
+    public String getAd() {
+        return ad;
+    }
+
+    public void setAd(String ad) {
+        this.ad = ad;
+    }
+
+    public String getVergiNo() {
+        return vergiNo;
+    }
+
+    public void setVergiNo(String vergiNo) {
+        this.vergiNo = vergiNo;
+    }
+
+    public String getSifre() {
+        return sifre;
+    }
+
+    public void setSifre(String sifre) {
+        this.sifre = sifre;
+    }
+}
+public class hesaplar {
+    private double bankaHesabi;
+    private double nakitHesabi;
+
+    public hesaplar(double bankaHesabi, double nakitHesabi) {
+        this.bankaHesabi = bankaHesabi;
+        this.nakitHesabi = nakitHesabi;
+    }
+
+    // Getter ve Setter Metotları
+    public double getBankaHesabi() {
+        return bankaHesabi;
+    }
+
+    public void setBankaHesabi(double bankaHesabi) {
+        this.bankaHesabi = bankaHesabi;
+    }
+
+    public double getNakitHesabi() {
+        return nakitHesabi;
+    }
+
+    public void setNakitHesabi(double nakitHesabi) {
+        this.nakitHesabi = nakitHesabi;
+    }
+}
